@@ -413,11 +413,7 @@ body {
 
 /* ========================= CONTACT PAGE ========================= */
 
-.contact-wrapper {
-    background: url('https://i.imgur.com/ZHnK8pj.png');
-    background-size: cover;
-    padding: 80px 0;
-}
+
 
 .contact-inner {
     max-width: 1150px;
