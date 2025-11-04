@@ -413,7 +413,11 @@ body {
 
 /* ========================= CONTACT PAGE ========================= */
 
-
+.contact-wrapper {
+    height: 75vh;
+   
+    padding: 80px 0;
+}
 
 .contact-inner {
     max-width: 1150px;
