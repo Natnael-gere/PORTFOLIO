@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fdf2e2;
+}
+
+/* ========================= HEADER / NAV ========================= */
+
+.site-header {
+    background: #F8EEDC;
+    padding: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #004d32;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* Hover + Active */
+.nav-links a:hover,
+.nav-links .active {
+    color: #008c5f;
+    text-decoration: underline;
+}
+
+.nav-links .active {
+    color: #008c5f;
+    text-decoration: underline;
+}
+
+/* ========================= HERO SECTION ========================= */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    gap: 70px;
+}
+
+.hero-img img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #008c5f;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    color: #008c5f;
+    margin: 8px 0;
+}
+
+.hero-text p {
+    font-size: 22px;
+    color: #008c5f;
+}
+
+.btn {
+    display: inline-block;
+    background: #333;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #008c5f;
+}
+
+/* ========================= ABOUT PAGE ========================= */
+
+.about-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 40px 20px;
+}
+
+.about-container {
+    text-align: center;
+    max-width: 850px;
+    padding: 20px;
+    font-size: 19px;
+    color: #004d32;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.about-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #008c5f;
+    margin-bottom: 10px;
+}
+
+.line {
+    width: 70px;
+    height: 4px;
+    background: #008c5f;
+    margin: 0 auto 25px;
+    border-radius: 5px;
+}
+
+/* ========================= TASKS PAGE ========================= */
+
+.tasks-page {
+    padding: 40px;
+}
+
+.task-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #008c5f;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-line {
+    width: 80px;
+    height: 4px;
+    background: #008c5f;
+    margin: 0 auto 30px;
+    border-radius: 5px;
+}
+
+.task-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.task-card {
+    background: #f8eede;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    border: 2px solid #d9c49b;
+    transition: .3s;
+}
+
+.task-card:hover {
+    transform: translateY(-5px);
+    background: #f6e3c7;
+}
+
+.task-card h3 {
+    color: #008c5f;
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align:center;
+    font-weight: 700;
+}
+
+.task-images {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.task-images img {
+    width: 48%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #ebc86b;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.task-images img:hover {
+    transform: scale(1.05);
+}
+
+.task-card p {
+    font-size: 16px;
+    color: #004d32;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+/* Image Popup */
+.img-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.img-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+/* ========================= LEARNING PAGE ========================= */
+
+.learning-wrapper {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.learning-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #008c5f;
+    margin-bottom: 10px;
+}
+
+.learning-line {
+    width: 80px;
+    height: 4px;
+    background: #008c5f;
+    margin: 0 auto 35px;
+    border-radius: 5px;
+}
+
+.cream-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-content: center;
+}
+
+.cream-card {
+    background: #f8eede;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    border: 2px solid #d9c49b;
+    transition: .3s;
+    text-align: center;
+}
+
+.cream-card:hover {
+    transform: translateY(-6px);
+    background: #f6e3c7;
+}
+
+.cream-card img {
+    width: 90%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #ebc86b;
+    margin-bottom: 12px;
+}
+
+.cream-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #008c5f;
+}
+
+.cream-card p {
+    font-size: 16px;
+    color: #004d32;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+/* ========================= CERTIFICATIONS PAGE ========================= */
+
+.cert-page {
+    padding: 60px 100px;
+}
+
+.cert-title {
+    text-align: center;
+    font-size: 38px;
+    color: #008c5f;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.cert-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #ffe5b4b9;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.cert-card img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid #f4c76f;
+}
+
+.cert-info h2 {
+    color: #008c5f;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.cert-info p {
+    font-size: 16px;
+    color: #004d32;
+    line-height: 1.6;
+}
+
+.cert-date {
+    font-size: 14px;
+    color: #777;
+    font-style: italic;
+}
+
+.cert-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cert-link .cert-card {
+    cursor: pointer;
+}
+
+.cert-link .cert-card:hover {
+    transform: translateY(-5px);
+    background: #f5e3c9; /* subtle lift hover */
+}
+/* Certificate preview image */
+.cert-preview {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #f4c76f;
+    cursor: zoom-in;
+}
+
+/* PDF Popup */
+.pdf-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* PDF container box */
+.pdf-box {
+    width: 80%;
+    height: 85%;
+    background: white;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Close button */
+#closePopup {
+    position: absolute;
+    top: 10px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #008c5f;
+    font-weight: bold;
+}
+
+/* Full PDF display */
+#pdfViewer {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* ========================= CONTACT PAGE ========================= */
+
+.contact-wrapper {
+    background: url('https://i.imgur.com/ZHnK8pj.png');
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.contact-inner {
+    max-width: 1150px;
+    margin: auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-left {
+    width: 30%;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.contact-label {
+    font-size: 18px;
+    color: #505050;
+}
+
+.contact-title {
+    font-size: 36px;
+    color: #008c5f;
+    font-weight: 700;
+}
+
+.contact-photo-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.contact-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid white;
+    z-index: 5;
+    position: relative;
+}
+
+.yellow-blob {
+    position: absolute;
+    background: #f6c05c;
+    width: 350px;
+    height: 200px;
+    border-radius: 50%;
+    bottom: -40px;
+    left: -30px;
+    z-index: 1;
+}
+
+.green-scribble {
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    bottom: -40px;
+    left: -30px;
+    background: url('https://i.imgur.com/29ntwHX.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.contact-info {
+    width: 30%;
+    font-size: 18px;
+    color: #004d32;
+    font-weight: 600;
+    line-height: 2.2;
+}
+
+/* ========================= CONCLUSION PAGE ========================= */
+
+.conclusion-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fdf2e2;
+}
+
+.conclusion-section h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #008c5f;
+    margin-bottom: 10px;
+}
+
+.conclusion-line {
+    width: 80px;
+    height: 4px;
+    background: #008c5f;
+    margin: 0 auto 25px;
+    border-radius: 6px;
+}
+
+.conclusion-text {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #004d32;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container iframe,
+.video-container video {
+    width: 70%;
+    height: 390px;
+    border-radius: 15px;
+    border: 3px solid #e5c58c;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ========================= FOOTER ========================= */
+
+.site-footer {
+    text-align: center;
+    background: #F8EEDC;
+    padding: 20px;
+    font-size: 14px;
+    color: #004d32;
+    border-top: 2px solid #008c5f;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Mahra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ✅ SITE HEADER -->
+<header class="site-header">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ✅ CONTACT SECTION -->
+<section class="contact-wrapper">
+    <div class="contact-inner">
+
+        <!-- Left Text -->
+        <div class="contact-left">
+            <p class="contact-label">CONTACT</p>
+            <h1 class="contact-title">Let’s Work<br>Together</h1>
+        </div>
+
+        <!-- Center Photo + Decorations -->
+        <div class="contact-photo-wrap">
+            <div class="yellow-blob"></div>
+            <div class="green-scribble"></div>
+            <img src="3bfcb725-bfcb-4bca-9254-549c91fedc34.png" alt="Mahra Profile" class="contact-photo">
+        </div>
+
+        <!-- Right Contact Info -->
+        <div class="contact-info">
+            <p>📞 050-123-4567</p>
+            <p>📧 mahra@example.com</p>
+            <p>🌐 mahraportfolio.com</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- ✅ SITE FOOTER -->
+<footer class="site-footer">
+    <p>© 2025 Mahra Alshamsi | HCT IT Student</p>
+</footer>
+
+
+<!-- ✅ Full Image Preview (KEEP IT) -->
+<div id="imgPopup" class="img-popup">
+    <img id="popupImg">
+</div>
+
+<script>
+document.querySelectorAll(".task-images img").forEach(img => {
+  img.onclick = () => {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = img.src;
+  };
+});
+
+document.getElementById("imgPopup").onclick = () => {
+  document.getElementById("imgPopup").style.display = "none";
+};
+</script>
+
+</body>
+</html>
+

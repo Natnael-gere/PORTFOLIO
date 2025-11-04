@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tasks | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- ✅ SITE HEADER -->
+<header class="site-header">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tasks.html" class="active">Tasks</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+<section class="tasks-page">
+
+<h1 class="task-title">Weekly Tasks</h1>
+<div class="task-line"></div>
+
+<div class="task-grid">
+
+    <!-- WEEK 1 -->
+    <div class="task-card">
+    <h3>Week 1 — Course Introduction & Learning Style</h3>
+    
+    <div class="task-images">
+        <img src="week1.jfif" alt="">
+        <img src="week1(2).jfif" alt="">
+    </div>
+
+    <p>Course learning objectives and assessment plan, my learning style using the VARK test to understand how I learn best.</p>
+</div>
+
+    <!-- WEEK 5 -->
+    <div class="task-card">
+    <h3>Week 5 — Reflection & Study Planning</h3>
+    
+    <div class="task-images">
+        <img src="week5.jfif" alt="">
+        <img src="week5(1).jfif" alt="">
+    </div>
+
+    <p>A reflection about my learning progress and a weekly study plan using Microsoft To-Do to stay organized and productive.</p>
+</div>
+
+
+    <!-- WEEK 2 -->
+    <div class="task-card">
+    <h3>Week 2 — Using AI Tools in Learning</h3>
+    
+    <div class="task-images">
+        <img src="week2.png" alt="">
+        <img src="week2(1).jfif" alt="">
+    </div>
+
+    <p>Responsible AI usage and AI tools I use in daily learning activities like ChatGPT and Copilot.</p>
+</div>
+
+
+    <!-- WEEK 6 -->
+    <div class="task-card">
+    <h3>Week 6 — Ethical AI & Data Privacy</h3>
+    
+    <div class="task-images">
+        <img src="week6.jfif" alt="">
+    </div>
+
+    <p>Reflection on ethical AI use, data privacy, and how to avoid bias when using technology in learning.</p>
+</div>
+
+
+    <!-- WEEK 3 -->
+    <div class="task-card">
+    <h3>Week 3 — SQ3R & Bias Awareness</h3>
+    
+    <div class="task-images">
+        <img src="week3.jfif" alt="">
+        
+    </div>
+
+    <p>A bias-detecting poster to recognize signs of bias and avoid misinformation.</p>
+</div>
+
+
+    <!-- WEEK 7 -->
+    <div class="task-card">
+    <h3>Week 7 — Study Environment & Goal-Setting</h3>
+    
+    <div class="task-images">
+        <img src="week7.jfif" alt="">
+        <img src="week7(1).png" alt="">
+    </div>
+
+    <p>My study environment setup and goal-setting strategies using SMART and WOOP frameworks. </p>
+</div>
+
+
+    <!-- WEEK 4 -->
+    <div class="task-card">
+    <h3>Week 4 — Digital Note-Taking & Memory Strategies</h3>
+    
+    <div class="task-images">
+        <img src="week4.jfif" alt="">
+        <img src="week4(1).jfif" alt="">
+    </div>
+
+    <p>Digital note-taking using Copilot and a mind map to explore memory-boosting techniques and the benefits of using lists.</p>
+</div>
+
+
+    <!-- WEEK 8 -->
+    <div class="task-card">
+    <h3>Week 8 — Time Management & Digital Integrity</h3>
+    
+    <div class="task-images">
+        <img src="week8.jfif" alt="">
+        <img src="week8(1).jfif" alt="">
+    </div>
+
+    <p>A time-blocked daily schedule and a digital integrity poster to promote safe and responsible online behavior.</p>
+</div>
+
+
+</div>
+</section>
+<!-- ✅ SITE FOOTER -->
+<footer class="site-footer">
+    <p>© 2024 Mahra Alshamsi | HCT IT Student</p>
+</footer>
+<!-- ✅ Full Image Preview -->
+<div id="imgPopup" class="img-popup">
+    <img id="popupImg">
+</div>
+
+<script>
+document.querySelectorAll(".task-images img").forEach(img => {
+  img.onclick = () => {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = img.src;
+  };
+});
+
+document.getElementById("imgPopup").onclick = () => {
+  document.getElementById("imgPopup").style.display = "none";
+};
+</script>
+
+</body>
+</html>
+
+

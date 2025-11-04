@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahra Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ✅ SITE HEADER -->
+<header class="site-header">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+   
+</header>
+
+
+<section class="hero">
+    <div class="hero-img">
+        <img src="3bfcb725-bfcb-4bca-9254-549c91fedc34.png" alt="Mahra Alshamsi">
+    </div>
+
+    <div class="hero-text">
+        <h1>Hello, I’m Mahra Alshamsi</h1>
+        <h2>IT Student</h2>
+        <p>LSS 1003</p>
+
+        <a href="about.html" class="btn">Portfolio ▶</a>
+    </div>
+</section>
+<!-- ✅ SITE FOOTER -->
+<footer class="site-footer">
+    <p>© 2024 Mahra Alshamsi | HCT IT Student</p>
+</footer>
+<!-- ✅ Full Image Preview -->
+<div id="imgPopup" class="img-popup">
+    <img id="popupImg">
+</div>
+
+<script>
+document.querySelectorAll(".task-images img").forEach(img => {
+  img.onclick = () => {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = img.src;
+  };
+});
+
+document.getElementById("imgPopup").onclick = () => {
+  document.getElementById("imgPopup").style.display = "none";
+};
+</script>
+
+</body>
+</html>

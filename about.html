@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ✅ SITE HEADER -->
+<header class="site-header">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="tasks.html">Tasks</a></li>
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="conclusion.html">Conclusion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<section class="about-wrapper">
+    <div class="about-container">
+
+        <h2 class="about-title">About Me</h2>
+        <div class="line"></div>
+
+        <p>Hi! I'm Mahra Alshamsi an IT student at HCT. I enjoy learning about technology, networking, and cybersecurity.</p>
+
+        <p>This portfolio highlights the knowledge I gained in this course and how I improved my learning and study skills.</p>
+
+        <p>My goal is to continue growing in the IT field and become a skilled network professional who contributes to future technology and security solutions.</p>
+
+        <div class="about-icons">
+            <span>💻 Technology</span>
+            <span>🔐 Cybersecurity</span>
+            <span>🌐 Networking</span>
+        </div>
+
+    </div>
+</section>
+<!-- ✅ SITE FOOTER -->
+<footer class="site-footer">
+    <p>© 2024 Mahra Alshamsi | HCT IT Student</p>
+</footer>
+<!-- ✅ Full Image Preview -->
+<div id="imgPopup" class="img-popup">
+    <img id="popupImg">
+</div>
+
+<script>
+document.querySelectorAll(".task-images img").forEach(img => {
+  img.onclick = () => {
+    document.getElementById("imgPopup").style.display = "flex";
+    document.getElementById("popupImg").src = img.src;
+  };
+});
+
+document.getElementById("imgPopup").onclick = () => {
+  document.getElementById("imgPopup").style.display = "none";
+};
+</script>
+
+
+</body>
+</html>
+
